@@ -20,6 +20,9 @@ namespace DeviceInfoExemplo.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+
+            Plugin.CurrentActivity.CrossCurrentActivity.Current.Activity = this;
+
             LoadApplication(new App());
         }
     }
